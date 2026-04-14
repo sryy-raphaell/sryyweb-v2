@@ -1,0 +1,33 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 60px 80px;
+  position: relative;
+  z-index: 1;
+}
+.section-label {
+  font-size: 0.58rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  opacity: 0.8;
+}
+.section-title {
+  font-family: var(--font-jp);
+  font-size: clamp(2rem, 5.5vw, 4.5rem);
+  font-weight: 300;
+  color: var(--star-core);
+  line-height: 1.15;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section-title em {
+  font-style: italic;
+  color: var(--star-purple);
+  text-shadow: 0 0 30px rgba(201, 168, 255, 0.4);
+}

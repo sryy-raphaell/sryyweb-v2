@@ -1,0 +1,26 @@
+{
+  "embedded": {
+    "title": "Embedded Systems & IoT Engineering",
+    "icon": "cpu",
+    "tech": ["C", "C++", "Arduino", "ESP32", "STM32", "MQTT", "PCB Design"],
+    "level": 75,
+    "status": "Intermediate",
+    "project": "Smart Hydroponic Automation, Solar Monitoring System"
+  },
+  "software": {
+    "title": "Software Engineering & Web Development",
+    "icon": "code",
+    "tech": ["HTML", "CSS", "JavaScript", "Node.js", "Git"],
+    "level": 80,
+    "status": "Intermediate",
+    "project": "SRYY Platform, Data System, REST API"
+  },
+  "robotics": {
+    "title": "Robotics & Mechatronics Engineering",
+    "icon": "robot",
+    "tech": ["Servo Control", "Motor Driver", "CAD 3D", "ROS (Planned)"],
+    "level": 60,
+    "status": "Developing",
+    "project": "Autonomous Drone, Smart Actuator"
+  }
+}

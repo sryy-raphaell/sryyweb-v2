@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRYY Raphael</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="nebula-bg"></div>
+    <canvas id="starCanvas"></canvas>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar" id="navbar">
+      <div class="logo">
+        <a href="https://sryy-raphaell.github.io/gallery-projects/">SRYY</a>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achieve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+      <p class="home-eyebrow">ようこそ</p>
+      <h1 class="home-title">
+        SRYY
+        <span>星空の彼方</span>
+      </h1>
+      <p class="home-tagline"> Quietly among the stars</p>
+      <div id="helloText">Hello World</div>
+      <div class="shooting-star-deco">
+        <span>Scroll</span>
+        <div class="deco-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <p class="section-label reveal">Myself?</p>
+      <h2 class="section-title reveal">自分 <em>自身</em></h2>
+      <div class="about-wrapper">
+        <!-- Baris 1: Card 1 & 2 -->
+        <div class="about-cards-top">
+          <div class="about-card reveal">
+            <h3>Current Mission</h3>
+            <p>Membangun sistem kehidupan mandiri berbasis teknologi.</p>
+          </div>
+          <div class="about-card reveal">
+            <h3>Future Goal</h3>
+            <p>Menciptakan ekosistem teknologi yang hidup bersama alam .</p>
+          </div>
+        </div>
+
+        <!-- Baris 2: Card 3 | Avatar (tengah) | Card 4 -->
+        <div class="about-middle-row">
+          <div class="about-card reveal">
+            <h3>Tech Interest</h3>
+            <p>IoT · Robotics · Automation · Sustainable Tech</p>
+          </div>
+
+          <div class="about-left reveal">
+            <div class="avatar-wrap">
+              <div class="avatar-glow"></div>
+              <img src="assets/avatar/avatar.png" class="avatar" alt="Rafael" />
+            </div>
+            <p class="about-name">Rafael Tirtha Ramadhan</p>
+            <p class="about-role">Informatika · UNP · 2025</p>
+          </div>
+
+          <div class="about-card reveal">
+            <h3>Vision</h3>
+            <p>
+              Technology should expand like the cosmos — endlessly, curiously,
+              and alive.
+            </p>
+          </div>
+        </div>
+
+        <!-- Baris 3: Card 5 full + Identity -->
+        <div class="about-cards-bottom">
+          <div class="about-card reveal" style="grid-column: 1/-1">
+            <h3>Identity</h3>
+            <p>NIM 25343077 · Prodi Informatika · Universitas Negeri Padang</p>
+          </div>
+        </div>
+
+        <!-- Baris 4: Hobi & Keahlian -->
+        <div class="about-lists">
+          <div class="list-card reveal">
+            <h3>Hobi</h3>
+            <ul class="hobi-list">
+              <li>Eksplorasi Elektronik &amp; Tinkering</li>
+              <li>Membaca</li>
+              <li>Stargazing &amp; Astrofotografi</li>
+              <li>Game Development Eksperimen</li>
+            </ul>
+          </div>
+          <div class="list-card reveal">
+            <h3>Keahlian</h3>
+            <ol class="keahlian-list">
+              <li>Pemrograman Embedded (C/C++)</li>
+              <li>Web Development (HTML, CSS, JS)</li>
+              <li>Desain PCB &amp; Prototyping</li>
+              <li>Sistem IoT &amp; Sensor Integration</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  SKILLS SECTION  -->
+    <section id="skills" class="section">
+      <p class="section-label reveal">Interest</p>
+      <h2 class="section-title reveal">興 <em>味</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-skill="embedded">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">Embedded Systems &amp; IoT Engineering</p>
+        </div>
+        <div class="skill-card reveal" data-skill="software">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">
+            Software Engineering &amp; Web Development
+          </p>
+        </div>
+        <div class="skill-card reveal" data-skill="robotics">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">
+            Robotics &amp; Mechatronics Engineering
+          </p>
+        </div>
+        <div class="skill-card reveal" data-skill="game">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">
+            Game Development &amp; Interactive Technology
+          </p>
+        </div>
+        <div class="skill-card reveal" data-skill="cyber">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">
+            Cybersecurity &amp; Network Engineering
+          </p>
+        </div>
+        <div class="skill-card reveal" data-skill="product">
+          <span class="skill-icon"></span>
+          <p class="skill-card-title">Product Engineering / Tech Innovator</p>
+        </div>
+      </div>
+      <div class="skill-detail" id="skillDetail">
+        <button class="detail-close" id="detailClose">ESC · Close</button>
+        <div class="detail-content">
+          <h3 id="detailTitle"></h3>
+          <p>
+            <strong>Languages &amp; Tools —</strong>
+            <span id="detailTech"></span>
+          </p>
+          <p><strong>Status —</strong> <span id="detailStatus"></span></p>
+          <p>
+            <strong>Project Roadmap —</strong> <span id="detailProject"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/skills.js"></script>
+
+    <!--  PROJECT SECTION  -->
+    <section id="projects" class="section">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="section-title reveal">ミッション <em>ログ</em></h2>
+
+      <table class="project-table reveal">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Year</th>
+            <th>Preview</th>
+          </tr>
+        </thead>
+        <tbody id="projectTable"></tbody>
+      </table>
+      <div class="project-preview">
+        <img id="projectImage" src="" alt="Project Preview" />
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <p class="section-label reveal">Milestones</p>
+      <h2 class="section-title reveal">賞 <em>状</em></h2>
+      <div class="achievement-grid">
+        <div class="achievement reveal">
+          <span class="achievement-icon"></span>2nd BAPPEDA Prov.
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement-icon"></span>OSNP Fisika and Informatika
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement-icon"></span>1st Water Rocket - Targeting
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="section">
+      <div class="footer-content">
+        <div style="text-align: center" class="reveal">
+          <p class="section-label reveal">Collaboration?</p>
+          <h2 class="footer-contact-title">協力 <em>する</em></h2>
+          <p
+            style="
+              font-size: 0.72rem;
+              color: var(--font-jp);
+              margin: 16px 0 28px;
+              letter-spacing: 1.5px;
+            "
+          >
+            Open for collaboration across any orbit.
+          </p>
+          <a href="https://github.com/sryy-raphaell" class="github-btn"
+            >⟶ &nbsp;Go To Github</a
+          >
+        </div>
+        <div class="footer-divider"></div>
+
+        <div class="footer-block reveal">
+          <p class="footer-section-label">Riwayat Pendidikan</p>
+          <table class="edu-table" border="1" cellpadding="10" cellspacing="4">
+            <thead>
+              <tr>
+                <th class="table-title" colspan="4">
+                  Riwayat Pendidikan — Rafael Tirtha Ramadhan
+                </th>
+              </tr>
+              <tr>
+                <th>Jenjang</th>
+                <th>Nama Institusi</th>
+                <th>Tahun Masuk</th>
+                <th>Tahun Lulus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SD</td>
+                <td>SDN 49 Payakumbuh</td>
+                <td>2013</td>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <td>MTsN</td>
+                <td>MTsN 1 Payakumbuh</td>
+                <td>2019</td>
+                <td>2020</td>
+              </tr>
+              <tr>
+                <td>SMA</td>
+                <td>SMAN IBS Raudhatul Jannah</td>
+                <td rowspan="2" class="rowspan-cell">2022</td>
+                <td>2025</td>
+              </tr>
+              <tr>
+                <td>SMA — Ekskul Robotik</td>
+                <td>SMAN IBS Raudhatul Jannah</td>
+                <td>2025</td>
+              </tr>
+              <tr>
+                <td>S1</td>
+                <td>Universitas Negeri Padang — Informatika</td>
+                <td>2025</td>
+                <td>Sekarang</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="footer-block reveal">
+          <p class="footer-section-label">Kategori Keahlian</p>
+          <table
+            class="skill-cat-table"
+            border="1"
+            cellpadding="10"
+            cellspacing="4"
+          >
+            <thead>
+              <tr>
+                <th class="cat-title" colspan="2">
+                  Ringkasan Kategori Keahlian
+                </th>
+              </tr>
+              <tr>
+                <th>Kategori</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bahasa Pemrograman</td>
+                <td>
+                  <ul style="list-style-type: disc">
+                    <li>HTML &amp; CSS</li>
+                    <li>JavaScript</li>
+                    <li>C / C++</li>
+                    <li>Python (Dasar)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Embedded &amp; IoT</td>
+                <td>
+                  <ol style="list-style-type: decimal">
+                    <li>Arduino / ESP32</li>
+                    <li>Sensor Integration</li>
+                    <li>MQTT Protocol</li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td>Tools &amp; Platform</td>
+                <td>
+                  <ul style="list-style-type: circle">
+                    <li>Git &amp; GitHub</li>
+                    <li>VS Code</li>
+                    <li>PCB Wizard and Fritzing</li>
+                    <li>Blender (3D Dasar)</li>
+                    <li>Arduino IDE</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Soft Skills</td>
+                <td>
+                  <ol style="list-style-type: upper-roman">
+                    <li>Problem Solving</li>
+                    <li>Self Learning</li>
+                    <li>Project Documentation</li>
+                  </ol>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="footer-divider"></div>
+        <p class="footer-copy">© 2026 SRYY — Rafael Tirtha Ramadhan ·</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/app.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/hello.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/skills.js"></script>
+  </body>
+</html>

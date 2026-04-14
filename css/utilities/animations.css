@@ -1,0 +1,103 @@
+.sky {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #4a6fa5 0%,
+    #6c5b7b 35%,
+    #2b2e4a 70%,
+    #0f2027 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.ocean {
+  background: linear-gradient(
+    var(--ocean-light),
+    var(--ocean-deep)
+  ); /* Gradasi warna laut dari terang ke dalam */
+}
+
+.river {
+  background: var(--river); /* Warna solid sungai dari variable */
+}
+
+.forest {
+  background: var(--forest); /* Warna solid tema hutan */
+}
+
+.mountain {
+  background: var(--mountain); /* Warna solid tema pegunungan */
+}
+
+.core {
+  background: var(--core); /* Warna bagian inti / footer */
+}
+
+.cloud {
+  position: absolute; /* Posisi bebas relatif terhadap parent yang position: relative */
+  width: 320px; /* Lebar gambar awan */
+  opacity: 0.9; /* Transparansi sedikit agar terlihat natural */
+}
+
+.cloud-left {
+  left: 0; /* Menempel ke sisi kiri layar */
+  top: 500px; /* Jarak dari atas */
+  transform: translateX(-100%) scaleX(-1);
+  scale: 2;
+}
+
+.cloud-right {
+  right: 0; /* Menempel ke sisi kanan layar */
+  top: 150px; /* Jarak dari atas (dibedakan agar tidak simetris sempurna) */
+}
+
+.sky-overlay {
+  position: absolute; /* Posisi bebas untuk menutupi seluruh area sky */
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.5)
+  );
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}

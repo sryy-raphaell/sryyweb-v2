@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: var(--void);
+  color: var(--text-bright);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.quote {
+  font-family: 'Noto Serif JP', serif;
+}
+
